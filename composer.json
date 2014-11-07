@@ -1,0 +1,16 @@
+{
+    "name": "lukaswhite/badges",
+    "description": "An example of server-generated badges, allowing people to embed your content in their website",
+    "require": {
+        "silex/silex": "~2.0@dev",
+        "twig/twig": ">=1.8,<2.0-dev",
+        "smottt/wideimage": "dev-master"
+    },
+    "authors": [
+        {
+            "name": "lukaswhite",
+            "email": "hello@lukaswhite.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}

@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title>{{ username }}</title>
+    <style>
+      .badge {
+        width: 250px;
+        height: 80px;
+        border: solid 1px #ccc;
+        clear: both;
+      }
+      .avatar {
+        float: left;
+        width: 80px;
+      }
+      .badge .avatar img {
+        margin: 10px 0 0 10px
+      }
+      .badge .info {
+        width: 170px;
+        float: right;
+      }
+      .badge .info h3 {
+        margin: 0.25em 0;
+      }
+      .badge .info h4 {
+        margin: 0.25em 0;
+        color: #666;
+      }
+    </style>
+  </head> 
+  <body>
+    <div class="badge">
+      <div class="avatar">
+        <img src="{{ imagepath }}/{{ user.avatar }}">
+      </div>
+      <div class="info">
+        <h3>{{ username }}</h3>
+        <h4>{{ user.rank }}</h4>
+        <div class="trophies">
+          {% for i in 1..user.trophies %}
+          <img src="{{ imagepath }}/trophy.png">
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

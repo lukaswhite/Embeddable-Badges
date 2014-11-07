@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title>Badges Demonstration</title>
+    <style>
+      iframe {
+        border: none;
+        padding: 0;
+      }
+      .override .badge {
+        background: yellow;
+      }      
+    </style>
+  </head> 
+  <body>
+    
+    <article>
+      <header><h2>Image Approach</h3></header>
+
+      <img src="/image/helen">
+
+    </article>
+
+    <article>
+      <header><h2>iFrame Approach</h2></header>
+
+      <iframe src="/iframe/dave" width="300" height="100"></iframe>      
+
+    </article>
+
+    <article>
+      <header><h2>Javascript Approach</h2></header>
+
+      <div><script src="/js/jim"></script></div>
+
+    </article>
+
+    <article>
+      <header><h2>Javascript Approach (Overriding styles)</h2></header>
+
+      <div class="override">
+        <div><script src="/js/jim"></script></div>
+      </div>
+
+    </article>
+
+  </body>
+</html>
